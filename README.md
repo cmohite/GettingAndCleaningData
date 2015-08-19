@@ -1,4 +1,4 @@
-# GettingAndCleaningData - Getting And Cleaning Data Course Project (Peer Assignment)
+# GettingAndCleaningData - Course Project (Peer Assignment)
 
 This repository hosts R script, code-book & output of the script for Course Project of Data Science's Getting And Cleaning Data module. 
 
