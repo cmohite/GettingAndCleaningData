@@ -35,7 +35,7 @@ For each record in the dataset it is provided:
 
 ### Tranformation Details
 
-## Test & Train Data is read into R from below files:
+# Test & Train Data is read into R from below files:
   
     R script Varibale       File
       x_test  <-        X_test.txt
@@ -45,31 +45,24 @@ For each record in the dataset it is provided:
       subject_test <-   subject_test.txt 
       subject_train <-  subject_train.txt
       
-## Fearures & activity labels details are read into R
+# Fearures & activity labels details are read into R
 
       features <-     features.txt
       activity_labels <-  activity_labels.txt 
 
-## Descriptive Column headers are assigned to test & train data loaded into R using features data loaded into R.
+# Descriptive Column headers are assigned to test & train data loaded into R using features data loaded into R.
 
-## Data for columns related to only required mesaurements - mean and std is extracted in separate data frames.
+# Data for columns related to only required mesaurements - mean and std is extracted in separate data frames.
 
       x_test_mean_std
       x_train_mean_std 
       
-## Subjects, Test & Train data merged into one data frame called merged.
+# Subjects, Test & Train data merged into one data frame called merged.
 
-## Subject & Activity columns of merged data frame are labelled as SubjectID and ActivityID respectively. 
+# Subject & Activity columns of merged data frame are labelled as SubjectID and ActivityID respectively. 
 
-## Average for each variable for each activity & subject is calculated and stored into avg_data data frame.
+# Average for each variable for each activity & subject is calculated and stored into avg_data data frame.
 
-## Activity IDs in avg_data are replaced with activity labels loaded into R.
+# Activity IDs in avg_data are replaced with activity labels loaded into R.
 
-## avg_data is written into a text file called avg.txt.
-
-      
-      
-  
-
-
-
+# avg_data is written into a text file called avg.txt.
