@@ -1,2 +1,7 @@
-# GettingAndCleaningData
-Peer Assignment - Getting And Cleaning Data
+# GettingAndCleaningData - Getting And Cleaning Data Course Project (Peer Assignment)
+
+This repository hosts R script, code-book & output of the script for Course Project of Data Science's Getting And Cleaning Data module. 
+
+The dataset being used is: https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip 
+
+
