@@ -8,9 +8,32 @@ The dataset being used is: https://d396qusza40orc.cloudfront.net/getdata%2Fproje
 
 run_analysis.R - This R script file does the following:
 
-* Merges the training and the test sets to create one data set.
-* Extracts only the measurements on the mean and standard deviation for each measurement. 
-* Uses descriptive activity names to name the activities in the data set
-* Appropriately labels the data set with descriptive variable names. 
-* From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
+* Reads Subjects, Test & Train Data into R from below files:
 
+  - x_test <- X_test.txt 
+  - y_test <- Y_text.txt 
+  - x_train <- X_train.txt 
+  - y_train <- Y_train.txt 
+  - subject_test <- subject_test.txt 
+  - subject_train <- subject_train.txt
+
+* Reads Fearures & activity labels details into R
+
+   - features <- features.txt 
+   - activity_labels <- activity_labels.txt
+
+* Assigns descriptive Column headers to test & train data loaded into R using features data.
+
+* Extracts data for columns related to only required mesaurements - mean and std in separate data frames.
+
+     x_test_mean_std & x_train_mean_std
+
+* Merges Subjects, Test & Train data into one data frame called merged.
+
+* Labels Subject & Activity columns of merged data frame as SubjectID and ActivityID respectively.
+
+* Calculates Average for each variable for each activity & subject and stores into avg_data data frame.
+
+* Replace Activity IDs in avg_data  with activity labels loaded into R.
+
+* Writes avg_data into a text file called avg.txt.
