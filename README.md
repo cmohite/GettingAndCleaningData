@@ -37,3 +37,10 @@ run_analysis.R - This R script file does the following:
 * Replace Activity IDs in avg_data  with activity labels loaded into R.
 
 * Writes avg_data into a text file called avg.txt.
+
+#Running the script
+
+- Change current directory to directory where run_analysis.R script exists. 
+- Download the data set. The files should be stored to "data/UCI HAR Dataset" difrectory under your working directory (directory where .R script exists).
+- Run Rscript run_analysis.R.
+- The tidy dataset should get created in the current directory as avg.txt.
