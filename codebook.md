@@ -35,34 +35,32 @@ For each record in the dataset it is provided:
 
 ### Tranformation Details
 
-* Test & Train Data is read into R from below files:
-  
-    R script Varibale       File
-      x_test  <-        X_test.txt
-      y_test  <-        Y_text.txt
-      x_train <-        X_train.txt
-      y_train <-        Y_train.txt
-      subject_test <-   subject_test.txt 
-      subject_train <-  subject_train.txt
-      
-* Fearures & activity labels details are read into R
+* Reads Subjects, Test & Train Data into R from below files:
 
-      features <-     features.txt
-      activity_labels <-  activity_labels.txt 
+  - x_test <- X_test.txt 
+  - y_test <- Y_text.txt 
+  - x_train <- X_train.txt 
+  - y_train <- Y_train.txt 
+  - subject_test <- subject_test.txt 
+  - subject_train <- subject_train.txt
 
-* Descriptive Column headers are assigned to test & train data loaded into R using features data loaded into R.
+* Reads Fearures & activity labels details into R
 
-* Data for columns related to only required mesaurements - mean and std is extracted in separate data frames.
+   - features <- features.txt 
+   - activity_labels <- activity_labels.txt
 
-      x_test_mean_std
-      x_train_mean_std 
-      
-* Subjects, Test & Train data merged into one data frame called merged.
+* Assigns descriptive Column headers to test & train data loaded into R using features data.
 
-* Subject & Activity columns of merged data frame are labelled as SubjectID and ActivityID respectively. 
+* Extracts data for columns related to only required mesaurements - mean and std in separate data frames.
 
-* Average for each variable for each activity & subject is calculated and stored into avg_data data frame.
+     x_test_mean_std & x_train_mean_std
 
-* Activity IDs in avg_data are replaced with activity labels loaded into R.
+* Merges Subjects, Test & Train data into one data frame called merged.
 
-* avg_data is written into a text file called avg.txt.
+* Labels Subject & Activity columns of merged data frame as SubjectID and ActivityID respectively.
+
+* Calculates Average for each variable for each activity & subject and stores into avg_data data frame.
+
+* Replace Activity IDs in avg_data  with activity labels loaded into R.
+
+* Writes avg_data into a text file called avg.txt.
